@@ -27,7 +27,7 @@ const MainHeader = () => {
 
   return (
     <header className="fixed z-10 bg-white w-full pt-5 pb-4 lg:pt-6 lg:pb-5 border-b border-slate-300">
-      <div className="w-10/12 mx-auto flex flex-row items-center justify-between">
+      <div className="w-11/12 lg:w-10/12 mx-auto flex flex-row items-center justify-between">
         <h1 className="text-xl font-bold">Exclusive</h1>
         <button onClick={onClickMenuMobile} className="block md:hidden">
           {isMenuMobile ? (

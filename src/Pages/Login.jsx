@@ -7,7 +7,7 @@ const Login = () => {
     <>
       <AuthHeaders />
       <div className="pt-24 pb-20 md:pt-36 md:pb-24 lg:pt-40 lg:pb-28 flex flex-col items-center justify-center">
-        <div className="w-10/12 md:11/12 lg:w-8/12 mx-auto flex flex-col md:flex md:flex-row">
+        <div className="w-11/12 lg:w-8/12 mx-auto flex flex-col md:flex md:flex-row">
           <img
             className="order-1 md:order-0 mt-4 md:mt-0 w-10/12 mx-auto md:mx-0 md:w-1/2 lg:w-2/4 max-sm:rounded-lg md:rounded-l-3xl "
             src={login}

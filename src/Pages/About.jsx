@@ -13,7 +13,7 @@ const About = () => {
     <>
       <AuthHeaders />
       <div className="pt-20 pb-20 md:pt-32 md:pb-28 lg:pt-32 lg:pb-40 flex flex-col items-center justify-center">
-        <div className="w-10/12 mx-auto">
+        <div className="w-11/12 lg:w-10/12 mx-auto">
 
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 p-3 md:pr-6 lg:p-16 flex flex-col items-start justify-center">

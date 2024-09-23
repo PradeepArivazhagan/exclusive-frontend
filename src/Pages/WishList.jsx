@@ -14,7 +14,7 @@ const WishList = () => {
     <>
       <MainHeader/>
       <div className="pt-24 pb-10 md:pt-28 md:pb-10 lg:pt-32 lg:pb-20 flex flex-col items-center justify-center">
-        <div className="w-10/12 mx-auto">
+        <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="flex flex-row items-center justify-between">
             <h1>WishList(4)</h1>
             <button className="py-2 px-3 md:px-6 lg:py-3 lg:px-12 border border-black hover:border-[#7D8184] hover:text-[#7D8184] rounded-sm">

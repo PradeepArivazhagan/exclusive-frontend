@@ -11,7 +11,7 @@ const Checkout = () => {
     <>
       <MainHeader />
       <div className="pt-24 pb-14 md:pt-32 md:pb-24 lg:pt-32 lg:pb-24 flex flex-col items-center justify-center">
-        <div className="w-10/12 mx-auto flex flex-col lg:flex-row">
+        <div className="w-11/12 lg:w-10/12 mx-auto flex flex-col lg:flex-row">
           <div className="w-full md:w-3/4 mx-auto lg:mx-0 lg:w-4/12">
             <h1 className="max-sm:font-semibold text-3xl">Billing Details</h1>
             <div className="mt-6">

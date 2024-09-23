@@ -8,7 +8,7 @@ const Cart = () => {
     <>
       <MainHeader />
       <div className="pt-20 pb-16 md:pt-28 md:pb-20 lg:pt-28 lg:pb-20 flex flex-col items-center justify-center">
-        <div className="w-10/12 mx-auto">
+        <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="w-full py-5 px-2 md:px-10 shadow-sm rounded-md">
             <ul className="w-full grid grid-cols-4 text-sm md:text-base">
               <li>Product</li>

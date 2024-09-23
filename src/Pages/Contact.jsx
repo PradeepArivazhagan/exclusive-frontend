@@ -8,7 +8,7 @@ const Contact = () => {
     <>
       <AuthHeaders />
       <div className="pt-28 pb-16 md:pt-36 md:pb-24 lg:pt-40 lg:pb-32 flex flex-col items-center justify-center">
-        <div className="w-10/12 md:11/12 lg:w-8/12 mx-auto flex flex-col md:flex-row gap-3 ">
+        <div className="w-11/12 lg:w-10/12 md:11/12 lg:w-8/12 mx-auto flex flex-col md:flex-row gap-3 ">
           <div className="w-full md:w-5/12 py-6 px-4 lg:py-10 lg:px-8 shadow-md rounded-md">
             <div>
               <div className="flex flex-row items-center gap-3">

@@ -14,7 +14,7 @@ const ProductDetails = () => {
     <>
       <MainHeader />
       <div className="pt-24 pb-10 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24 flex flex-col items-center justify-center">
-        <div className="w-10/12 mx-auto">
+        <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="flex flex-col lg:flex-row">
             <div className=" w-full lg:w-1/2 flex flex-col md:flex-row gap-5">
               <div className="order-2 md:order-1 flex flex-row gap-2 md:gap-0 md:flex-col justify-between">

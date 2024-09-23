@@ -5,7 +5,7 @@ const Account = () => {
     <>
       <MainHeader />
       <div className="pt-24 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-20 flex flex-col items-center justify-center">
-        <div className="w-10/12 mx-auto">
+        <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="flex flex-row items-center justify-between">
             <h1>My Account</h1>
             <h1>

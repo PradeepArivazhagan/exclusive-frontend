@@ -7,7 +7,7 @@ const NotFound = () => {
     <div>
       <MainHeader />
       <div className="pt-52 pb-36 md:pt-48 md:pb-28 lg:pt-60 lg:pb-44 flex flex-col items-center justify-center">
-        <div className="w-10/12 md:11/12 lg:w-8/12 mx-auto flex flex-col items-center">
+        <div className="11/12 lg:w-8/12 mx-auto flex flex-col items-center">
           <h1 className="text-4xl max-sm:font-semibold md:text-7xl lg:text-8xl">
             404 Not Found
           </h1>

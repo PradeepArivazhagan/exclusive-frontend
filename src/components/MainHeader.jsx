@@ -363,7 +363,7 @@ const MainHeader = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="bg-transparent focus:outline-none text-sm w-28"
+              className="bg-transparent focus:outline-none text-sm py-2 w-28"
             />
             <button>
               <img src={search} className="w-5" alt="search icon" />

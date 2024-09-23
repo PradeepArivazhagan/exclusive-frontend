@@ -210,7 +210,7 @@ const AuthHeaders = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="bg-transparent focus:outline-none text-sm w-28"
+              className="bg-transparent focus:outline-none text-sm w-28 py-2"
             />
             <button>
               <img src={search} className="w-5" alt="search icon" />

@@ -3,7 +3,7 @@ import copyright from "../assets/icons/copyright.svg";
 import qrcode from "../assets/images/qrcode.png";
 import googleplay from "../assets/images/googleplay.png";
 import appstore from "../assets/images/appstore.png";
-import facebook from "../assets/icons/Facebook.svg";
+import facebook from "../assets/icons/facebook.svg";
 import twitter from "../assets/icons/twitter.svg";
 import instagram from "../assets/icons/instagram.svg";
 import linkedin from "../assets/icons/linkedin.svg";

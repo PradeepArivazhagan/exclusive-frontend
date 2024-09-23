@@ -51,16 +51,16 @@ const AuthHeaders = () => {
           )}
         </button>
         <ul className="hidden lg:flex flex-row items-center gap-8 text-base">
-          <Link to="/">
+          <Link to="/" className="hover:border-b hover:border-slate-400">
             <li>Home</li>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" className="hover:border-b hover:border-slate-400">
             <li>Contact</li>
           </Link>
-          <Link to="/about">
+          <Link to="/about" className="hover:border-b hover:border-slate-400">
             <li>About</li>
           </Link>
-          <Link to="/signup">
+          <Link to="/signup" className="hover:border-b hover:border-slate-400">
             <li>Signup</li>
           </Link>
         </ul>

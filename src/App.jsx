@@ -25,7 +25,7 @@ const App = () => {
         <Route exact path="/cart" Component={Cart} />
         <Route exact path="/wishlist" Component={WishList} />
         <Route exact path="/productdetails" Component={ProductDetails}/>
-        <Route exact path="*" Component={NotFound} />
+        <Route path="*" Component={NotFound} />
       </Routes>
     </BrowserRouter>
   );

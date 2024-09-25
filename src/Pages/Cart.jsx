@@ -9,6 +9,7 @@ const Cart = () => {
       <MainHeader />
       <div className="pt-20 pb-16 md:pt-28 md:pb-20 lg:pt-28 lg:pb-20 flex flex-col items-center justify-center">
         <div className="w-11/12 lg:w-10/12 mx-auto">
+
           <div className="w-full py-5 px-2 md:px-10 shadow-sm rounded-md">
             <ul className="w-full grid grid-cols-4 text-sm md:text-base">
               <li>Product</li>
@@ -17,6 +18,7 @@ const Cart = () => {
               <li className="text-end">Subtotal</li>
             </ul>
           </div>
+
           <div className="mt-2 md:mt-4 py-5 px-2 md:px-10 shadow-sm rounded-md">
             <div className="w-full flex flex-col gap-4">
               <ul className="w-full grid grid-cols-4 text-sm md:text-base">
@@ -52,6 +54,7 @@ const Cart = () => {
               </ul>
             </div>
           </div>
+
           <div className="mt-6 flex flex-row items-center justify-between text-sm md:text-base ">
             <button className="py-2 px-3 md:px-6 lg:py-3 lg:px-12 border border-black hover:border-[#7D8184] hover:text-[#7D8184] rounded-sm">
               Return to Shop
@@ -60,6 +63,7 @@ const Cart = () => {
               Update Cart
             </button>
           </div>
+          
           <div className="mt-16 flex flex-row justify-end">
             <div className="w-full md:w-6/12 lg:w-4/12 p-3 md:py-5 md:px-4 rounded-md flex flex-col border border-black">
               <h1 className="text-lg font-semibold">Cart Total</h1>

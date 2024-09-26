@@ -4,7 +4,7 @@ import iphone from "../assets/images/iphone.png";
 import vegetable from "../assets/images/vegetable.png";
 import womenclothes from "../assets/images/womenclothes.png";
 import furniture from "../assets/images/furniture.png";
-import babyproducts from "../assets/images/babyproducts.png"
+import babyproducts from "../assets/images/babyproducts.png";
 
 const CarouselComponent = () => {
   var settings = {
@@ -12,12 +12,11 @@ const CarouselComponent = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     pauseOnHover: true,
+    arrows: false,
   };
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="">
       <div>
         <div className="bg-black flex flex-row items-center justify-center text-white px-5 py-7 md:py-7 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
@@ -62,10 +61,12 @@ const CarouselComponent = () => {
         <div className="bg-[#347928] flex flex-row items-center justify-center text-white px-5 py-6 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
-              <h1 className="text-xs md:text-base lg:font-semibold">Fresh & Healthy Fruits and Vegetables</h1>
+              <h1 className="text-xs md:text-base lg:font-semibold">
+                Fresh & Healthy Fruits and Vegetables
+              </h1>
             </div>
             <h1 className="text-xl md:text-4xl lg:text-6xl font-semibold my-3 md:my-6 text-[#FCCD2A]">
-            Super Grocery Sale!
+              Super Grocery Sale!
             </h1>
             <div className="flex flex-row items-center gap-3">
               <p className="text-xs md:text-sm lg:text-base pb-2 border-b border-white">
@@ -101,10 +102,12 @@ const CarouselComponent = () => {
         <div className="bg-[#001F3F] flex flex-row items-center justify-center text-white px-5 py-6 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
-              <h1 className="text-xs md:text-base lg:font-semibold">Get Quality at Affordable Prices</h1>
+              <h1 className="text-xs md:text-base lg:font-semibold">
+                Get Quality at Affordable Prices
+              </h1>
             </div>
             <h1 className="text-xl md:text-4xl lg:text-6xl font-semibold my-3 md:my-6 text-[#EAD8B1]">
-            Discount upto 40%
+              Discount upto 40%
             </h1>
             <div className="flex flex-row items-center gap-3">
               <p className="text-xs md:text-sm lg:text-base pb-2 border-b border-white">
@@ -140,10 +143,12 @@ const CarouselComponent = () => {
         <div className="bg-[#FCDE70] flex flex-row items-center justify-center text-white px-5 py-6 md:py-9 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
-              <h1 className="text-xs md:text-base lg:font-semibold text-black">Exclusive Modern Home Furnitures</h1>
+              <h1 className="text-xs md:text-base lg:font-semibold text-black">
+                Exclusive Modern Home Furnitures
+              </h1>
             </div>
             <h1 className="text-xl md:text-4xl lg:text-6xl font-semibold my-3 md:my-6 text-[#185519]">
-            Big Furniture Sale!!
+              Big Furniture Sale!!
             </h1>
             <div className="flex flex-row items-center gap-3">
               <p className="text-xs md:text-sm lg:text-base pb-2 border-b border-black text-black">
@@ -179,10 +184,12 @@ const CarouselComponent = () => {
         <div className="bg-[#F075AA] flex flex-row items-center justify-center text-white px-5 py-6 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
-              <h1 className="text-xs md:text-base lg:font-semibold ">Super Nourishing Baby care Combos</h1>
+              <h1 className="text-xs md:text-base lg:font-semibold ">
+                Super Nourishing Baby care Combos
+              </h1>
             </div>
             <h1 className="text-xl md:text-4xl lg:text-6xl font-semibold my-3 md:my-6 text-[#4F1787]">
-            Essential baby products
+              Essential baby products
             </h1>
             <div className="flex flex-row items-center gap-3">
               <p className="text-xs md:text-sm lg:text-base pb-2 border-b border-white">

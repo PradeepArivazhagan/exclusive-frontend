@@ -16,7 +16,7 @@ const Home = () => {
       <div className="pt-10 pb-20 md:pt-16 md:pb-28 lg:pt-20 lg:pb-36 flex flex-col items-center justify-center">
         <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="pt-8 flex flex-col lg:flex-row">
-            <ul className="order-1 mt-3 md:mt-5 lg:mt-0 lg:order-0 w-full pt-5 md:pt-4 lg:py-0 lg:w-2/12 flex flex-row flex-wrap md:justify-evenly lg:justify-between lg:flex-col gap-3">
+            <ul className="order-1 mt-3 md:mt-5 lg:mt-0 lg:order-0 w-full pt-5 md:pt-4 lg:py-0 lg:w-2/12 flex flex-row flex-wrap justify-evenly lg:justify-between lg:flex-col gap-3">
               <li className="bg-slate-200 lg:bg-transparent py-1 px-3 lg:py-0 lg:px-0 rounded-full text-xs md:text-sm lg:text-base">
                 Woman’s Fashion
               </li>
@@ -586,11 +586,11 @@ const Home = () => {
               className="h-svh bg-black bg-no-repeat bg-bottom md:bg-right-bottom lg:bg-bottom  rounded-md w-full lg:w-1/2 p-6 md:px-10 md:pt-10"
             >
               <div>
-                <h1 className="text-3xl font-semibold">Play Station 5</h1>
-                <p className="my-5 text-base font-light">
+                <h1 className="text-xl md:text-3xl font-semibold">Play Station 5</h1>
+                <p className="my-5 text-sm md:text-base font-light">
                   Black and White version of the PS5 coming out on sale.
                 </p>
-                <p className="font-bold pb-1 border-b w-fit">Shop Now</p>
+                <p className="text-sm md:text-base font-bold pb-1 border-b w-fit">Shop Now</p>
               </div>
             </div>
             <div className="rounded-md w-full lg:w-1/2 flex flex-col gap-5">
@@ -599,11 +599,11 @@ const Home = () => {
                 className=" bg-[#0D0D0D] bg-no-repeat md:bg-right-bottom  rounded-md w-full h-full p-6 md:p-10 lg:px-10 lg:pb-10 flex flex-col justify-end"
               >
                 <div className="w-1/2">
-                  <h1 className="text-3xl font-semibold">Women Collection's</h1>
-                  <p className="my-5 text-base font-light">
+                  <h1 className="text-xl md:text-3xl font-semibold">Women Collection's</h1>
+                  <p className="my-5 text-sm md:text-base font-light">
                     Featured woman collections that give you another vibe.
                   </p>
-                  <p className="font-bold pb-1 border-b w-fit">Shop Now</p>
+                  <p className="text-sm md:text-base font-bold pb-1 border-b w-fit">Shop Now</p>
                 </div>
               </div>
               <div className="flex flex-col lg:flex-row gap-5 h-full">
@@ -612,11 +612,11 @@ const Home = () => {
                   className="bg-[#0D0D0D] bg-no-repeat bg-right-top md:bg-right-bottom lg:bg-top  rounded-md w-full h-full p-6 md:p-10 lg:px-10 lg:pb-10 flex flex-col justify-end"
                 >
                   <div>
-                    <h1 className="text-3xl font-semibold">Speakers</h1>
-                    <p className="my-3 text-base font-light">
+                    <h1 className="text-xl md:text-3xl font-semibold">Speakers</h1>
+                    <p className="my-3 text-sm md:text-base font-light">
                       Amazon wireless speakers
                     </p>
-                    <p className="font-bold pb-1 border-b w-fit">Shop Now</p>
+                    <p className="text-sm md:text-base font-bold pb-1 border-b w-fit">Shop Now</p>
                   </div>
                 </div>
                 <div
@@ -624,11 +624,11 @@ const Home = () => {
                   className="bg-[#0D0D0D] bg-no-repeat bg-right-top md:bg-right-top lg:bg-top  rounded-md w-full h-full p-6 md:p-10 lg:px-10 lg:pb-10 flex flex-col justify-end"
                 >
                   <div>
-                    <h1 className="text-3xl font-semibold">Perfume</h1>
-                    <p className="my-3 text-base font-light">
+                    <h1 className="text-xl md:text-3xl font-semibold">Perfume</h1>
+                    <p className="my-3 text-sm md:text-base font-light">
                       GUCCI INTENSE OUD EDP
                     </p>
-                    <p className="font-bold pb-1 border-b w-fit">Shop Now</p>
+                    <p className="text-sm md:text-base font-bold pb-1 border-b w-fit">Shop Now</p>
                   </div>
                 </div>
               </div>

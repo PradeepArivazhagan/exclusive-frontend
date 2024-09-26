@@ -10,15 +10,15 @@ const CarouselComponent = () => {
   var settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     pauseOnHover: true,
     arrows: false,
   };
   return (
-    <Slider {...settings} className="">
+    <Slider {...settings}>
       <div>
-        <div className="bg-black flex flex-row items-center justify-center text-white px-5 py-7 md:py-7 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-black flex flex-row items-center justify-center text-white px-6 py-8 md:py-7 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <img src={apple} alt="apple" className="max-md:w-5" />
@@ -47,7 +47,7 @@ const CarouselComponent = () => {
               </svg>
             </div>
           </div>
-          <div className="w-1/2 flex flex-col items-center justify-center">
+          <div className="w-1/2 flex flex-col items-end justify-center">
             <img
               className="w-full h-full mx-auto lg:w-full lg:h-72"
               src={iphone}
@@ -58,7 +58,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#347928] flex flex-row items-center justify-center text-white px-5 py-6 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-[#347928] flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold">
@@ -99,7 +99,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#001F3F] flex flex-row items-center justify-center text-white px-5 py-6 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-[#001F3F] flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold">
@@ -140,7 +140,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#FCDE70] flex flex-row items-center justify-center text-white px-5 py-6 md:py-9 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-[#FCDE70] flex flex-row items-center justify-center text-white px-6 py-7 md:py-9 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold text-black">
@@ -181,7 +181,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#F075AA] flex flex-row items-center justify-center text-white px-5 py-6 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-[#F075AA] flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold ">

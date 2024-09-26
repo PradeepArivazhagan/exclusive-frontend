@@ -2,9 +2,9 @@ import justforyou1 from "../assets/images/justforyou1.png";
 const Product = () => {
   return (
     <div>
-      <div className="w-72 bg-[#F5F5F5] flex flex-col items-center justify-center rounded-t-md">
+      <div className="w-64 lg:w-72 bg-[#F5F5F5] flex flex-col items-center justify-center rounded-t-md">
         <div className="pt-2 px-2 w-full flex flex-row items-start justify-between">
-          <p className="py-2 px-2 bg-[#DB4444] text-white text-xs rounded-md">
+          <p className="p-1 lg:p-2 bg-[#DB4444] text-white text-xs rounded-md">
             -35%
           </p>
           <div className="flex flex-row gap-2">
@@ -47,17 +47,17 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="h-44 lg:h-52 flex flex-col items-center justify-center">
-          <img className="w-32 lg:w-44" src={justforyou1} alt="justforyou" />
+        <div className="h-40 lg:h-48 flex flex-col items-center justify-center">
+          <img className="w-32 lg:w-40" src={justforyou1} alt="justforyou" />
         </div>
-        <button className="relative w-full py-2 flex flex-row items-center justify-center gap-2 rounded-b-md text-white bg-black">
+        <button className="relative w-full py-2 flex flex-row items-center justify-center gap-2 rounded-b-md text-white bg-black hover:bg-gray-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6"
+            className="size-5"
           >
             <path
               strokeLinecap="round"
@@ -69,17 +69,17 @@ const Product = () => {
         </button>
       </div>
       <div className="mt-3 font-medium">
-        <h1 className="text-lg">ASUS FHD Gaming Laptop</h1>
-        <div className="mt-1 flex flex-row items-center gap-4">
-          <p className="text-[#DB4444]">$950</p>
-          <p className="text-slate-500 line-through">$950</p>
+        <h1 className="text-base lg:text-lg">ASUS FHD Gaming Laptop</h1>
+        <div className="my-1 flex flex-row items-center gap-3">
+          <p className="text-[#DB4444] text-base">$950</p>
+          <p className="text-slate-400 text-base line-through">$950</p>
         </div>
-        <div className="mt-2 flex flex-row items-center gap-1">
+        <div className="flex flex-row items-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="#FFAD33"
-            className="size-5"
+            className="size-4 lg:size-5"
           >
             <path
               fillRule="evenodd"
@@ -91,7 +91,7 @@ const Product = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="#FFAD33"
-            className="size-5"
+            className="size-4 lg:size-5"
           >
             <path
               fillRule="evenodd"
@@ -103,7 +103,7 @@ const Product = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="#FFAD33"
-            className="size-5"
+            className="size-4 lg:size-5"
           >
             <path
               fillRule="evenodd"
@@ -115,7 +115,7 @@ const Product = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="#FFAD33"
-            className="size-5"
+            className="size-4 lg:size-5"
           >
             <path
               fillRule="evenodd"
@@ -127,7 +127,7 @@ const Product = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="#FFAD33"
-            className="size-5"
+            className="size-4 lg:size-5"
           >
             <path
               fillRule="evenodd"

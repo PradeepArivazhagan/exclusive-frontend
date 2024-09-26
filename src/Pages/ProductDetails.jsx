@@ -118,8 +118,8 @@ const ProductDetails = () => {
                 <div className="my-5 flex flex-row items-center gap-4">
                   <h1 className="text-base md:text-lg">Colors:</h1>
                   <div className="flex flex-row items-center gap-2">
-                    <button className="w-4 h-4 bg-slate-400 rounded-full border-2 border-black"></button>
-                    <button className="w-4 h-4 bg-[#DB4444] rounded-full "></button>
+                  <input type="radio" autoFocus className=" w-5 h-5 accent-[gray]"/>
+                    <input type="radio" autoFocus className=" w-5 h-5 accent-[#DB4444]"/>
                   </div>
                 </div>
                 <div className="flex flex-row items-center gap-4">
@@ -152,10 +152,10 @@ const ProductDetails = () => {
                       +
                     </button>
                   </div>
-                  <button className="bg-[#DB4444] hover:bg-[#E07575] py-2 px-6 rounded-sm text-sm text-white">
+                  <button className="bg-[#DB4444] hover:bg-[#E07575] py-[9px] px-6 rounded-sm text-sm text-white">
                     Buy Now
                   </button>
-                  <button className="w-8 p-1 text-xl border border-black rounded-sm flex flex-col items-center justify-center">
+                  <button className="p-2 text-xl border border-black rounded-md flex flex-col items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"

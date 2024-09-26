@@ -2,7 +2,7 @@ import speaker from "../assets/images/speaker.png";
 
 const Banner = () => {
   return (
-    <div className="bg-black my-16 lg:my-24 p-5 md:p-10 lg:p-16 flex flex-col lg:flex-row lg:items-center">
+    <div className="bg-black my-14 lg:my-24 p-5 md:p-10 lg:p-16 flex flex-col lg:flex-row lg:items-center">
       <div className="order-1 w-full lg:order-1 lg:w-1/2">
         <h1 className="text-xs md:text-sm text-[#00FF66]">Categories</h1>
         <p className="text-2xl md:text-6xl my-5 md:my-10 text-white font-semibold md:mr-5">

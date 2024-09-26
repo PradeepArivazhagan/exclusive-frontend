@@ -2,20 +2,20 @@ import justforyou1 from "../assets/images/justforyou1.png";
 const Product = () => {
   return (
     <div>
-      <div className="w-64 lg:w-72 bg-[#F5F5F5] flex flex-col items-center justify-center rounded-t-md">
+      <div className="w-56 md:w-64 lg:w-72 bg-[#F5F5F5] flex flex-col items-center justify-center rounded-t-md">
         <div className="pt-2 px-2 w-full flex flex-row items-start justify-between">
           <p className="p-1 lg:p-2 bg-[#DB4444] text-white text-xs rounded-md">
             -35%
           </p>
           <div className="flex flex-row gap-2">
-            <div className="bg-white p-2 rounded-full">
+            <div className="bg-white p-[6px] md:p-2 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-5"
+                className="size-4 md:size-5"
               >
                 <path
                   strokeLinecap="round"
@@ -24,14 +24,14 @@ const Product = () => {
                 />
               </svg>
             </div>
-            <div className="bg-white p-2 rounded-full">
+            <div className="bg-white p-[6px] md:p-2 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-5"
+                className="size-4 md:size-5"
               >
                 <path
                   strokeLinecap="round"
@@ -47,8 +47,8 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="h-40 lg:h-48 flex flex-col items-center justify-center">
-          <img className="w-32 lg:w-40" src={justforyou1} alt="justforyou" />
+        <div className="h-32 md:h-40 lg:h-48 flex flex-col items-center justify-center">
+          <img className="w-28 md:w-32 lg:w-40" src={justforyou1} alt="justforyou" />
         </div>
         <button className="relative w-full py-2 flex flex-row items-center justify-center gap-2 rounded-b-md text-white bg-black hover:bg-gray-900">
           <svg
@@ -69,10 +69,10 @@ const Product = () => {
         </button>
       </div>
       <div className="mt-3 font-medium">
-        <h1 className="text-base lg:text-lg">ASUS FHD Gaming Laptop</h1>
+        <h1 className="text-sm md:text-base lg:text-lg">ASUS FHD Gaming Laptop</h1>
         <div className="my-1 flex flex-row items-center gap-3">
-          <p className="text-[#DB4444] text-base">$950</p>
-          <p className="text-slate-400 text-base line-through">$950</p>
+          <p className="text-[#DB4444] text-sm md:text-base">$950</p>
+          <p className="text-slate-400 text-sm md:text-base line-through">$950</p>
         </div>
         <div className="flex flex-row items-center gap-1">
           <svg

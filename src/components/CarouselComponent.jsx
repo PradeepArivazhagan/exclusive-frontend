@@ -49,7 +49,7 @@ const CarouselComponent = () => {
           </div>
           <div className="w-1/2 flex flex-col items-end justify-center">
             <img
-              className="w-full h-full mx-auto lg:w-full lg:h-72"
+              className="w-36 h-32 md:w-52 md:h-48 mx-auto lg:w-80 lg:h-72"
               src={iphone}
               alt="iphone"
             />
@@ -58,7 +58,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#347928] flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-r from-green-600 via-green-500 to-green-400 flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold">
@@ -99,7 +99,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#001F3F] flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-l from-blue-800 via-blue-700 to-blue-600 flex flex-row items-center justify-center text-white px-6 py-7 md:py-9 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold">
@@ -131,7 +131,7 @@ const CarouselComponent = () => {
           </div>
           <div className="w-1/2 flex flex-col items-center justify-center">
             <img
-              className="w-full h-full mx-auto lg:w-full lg:h-72"
+              className="w-36 h-32 md:w-52 md:h-48 mx-auto lg:w-80 lg:h-72"
               src={womenclothes}
               alt="womenclothes"
             />
@@ -140,7 +140,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#FCDE70] flex flex-row items-center justify-center text-white px-6 py-7 md:py-9 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 flex flex-row items-center justify-center text-white px-6 py-7 md:py-9 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold text-black">
@@ -181,7 +181,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-[#F075AA] flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-r from-pink-600 via-pink-500 to-pink-400 flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold ">

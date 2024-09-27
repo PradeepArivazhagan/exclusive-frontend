@@ -1,4 +1,4 @@
-import AuthHeaders from "../components/AuthHeaders";
+import MainHeader from "../components/MainHeader";
 import Footer from "../components/Footer";
 import detailMain from "../assets/images/detailMain.png";
 import detail1 from "../assets/images/detail1.png";
@@ -8,11 +8,10 @@ import detail4 from "../assets/images/detail4.png";
 import deliveryBlack from "../assets/icons/deliveryBlack.svg";
 import returnIcon from "../assets/icons/return.svg";
 import Product from "../components/Product";
-
-const ProductDetails = () => {
+const ProductDetailsPage = () => {
   return (
     <>
-      <AuthHeaders />
+      <MainHeader />
       <div className="pt-24 pb-10 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24 flex flex-col items-center justify-center">
         <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="flex flex-col lg:flex-row">
@@ -227,4 +226,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default ProductDetailsPage;

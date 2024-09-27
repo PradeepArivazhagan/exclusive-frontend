@@ -9,7 +9,6 @@ const Cart = () => {
       <MainHeader />
       <div className="pt-20 pb-16 md:pt-28 md:pb-20 lg:pt-28 lg:pb-20 flex flex-col items-center justify-center">
         <div className="w-11/12 lg:w-10/12 mx-auto">
-
           <div className="w-full py-5 px-2 md:px-10 shadow-sm rounded-md">
             <ul className="w-full grid grid-cols-4 text-sm md:text-base">
               <li>Product</li>
@@ -22,33 +21,89 @@ const Cart = () => {
           <div className="mt-2 md:mt-4 py-5 px-2 md:px-10 shadow-sm rounded-md">
             <div className="w-full flex flex-col gap-4">
               <ul className="w-full grid grid-cols-4 text-sm md:text-base">
-                <li className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
+                <li className="flex flex-col lg:flex-row items-start lg:items-center gap-2 md:gap-4">
                   <img className="max-sm:w-1/4" src={cart1} alt="cart" />
                   <h1>H1 Gamepad</h1>
                 </li>
                 <li className="text-center my-auto">$650</li>
-                <li className="text-center my-auto">
-                  <input
-                    type="number"
-                    placeholder="01"
-                    className="w-4/5 md:w-2/5 lg:w-1/5 placeholder:text-black focus:outline-none py-2 px-3 border border-black rounded-md"
-                  />
+                <li className="text-center my-auto flex flex-row items-center justify-center gap-2">
+                  <button className="p-1 bg-slate-100 rounded-full hover:bg-slate-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="size-3 md:size-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </button>
+                  <h1 className="font-base">1</h1>
+                  <button className="p-1 bg-slate-100 rounded-full  hover:bg-slate-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="size-3 md:size-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </button>
                 </li>
                 <li className="text-end my-auto">$650</li>
               </ul>
-              <hr/>
+              <hr />
               <ul className="w-full grid grid-cols-4 text-sm md:text-base">
-                <li className="flex flex-col lg:flex-row items-start lg:items-center gap-4 ">
+                <li className="flex flex-col lg:flex-row items-start lg:items-center gap-2 md:gap-4 ">
                   <img className="max-sm:w-1/4" src={cart2} alt="cart" />
                   <h1>LCD Monitor</h1>
                 </li>
                 <li className="text-center my-auto">$1100</li>
-                <li className="text-center my-auto">
-                  <input
-                    type="number"
-                    placeholder="01"
-                    className="w-4/5 md:w-2/5 lg:w-1/5 placeholder:text-black focus:outline-none py-2 px-3 border border-black rounded-md"
-                  />
+                <li className="text-center my-auto flex flex-row items-center justify-center gap-2">
+                  <button className="p-1 bg-slate-100 rounded-full hover:bg-slate-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="size-3 md:size-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </button>
+                  <h1 className="font-base">1</h1>
+                  <button className="p-1 bg-slate-100 rounded-full  hover:bg-slate-200">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="size-3 md:size-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </button>
                 </li>
                 <li className="text-end my-auto">$1100</li>
               </ul>
@@ -63,7 +118,7 @@ const Cart = () => {
               Update Cart
             </button>
           </div>
-          
+
           <div className="mt-16 flex flex-row justify-end">
             <div className="w-full md:w-6/12 lg:w-4/12 p-3 md:py-5 md:px-4 rounded-md flex flex-col border border-black">
               <h1 className="text-lg font-semibold">Cart Total</h1>

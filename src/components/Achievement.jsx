@@ -1,6 +1,6 @@
 const Achievement = () => {
   return (
-    <div className="mt-20 md:mt-24 lg:mt-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
+    <div className="mt-20 md:mt-24 lg:mt-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 lg:gap-10">
       <div className="group p-6 flex flex-col justify-center items-center border border-slate-400 rounded-md hover:border-0 bg-white hover:bg-[#DB4444] hover:text-white ">
         <div className="p-2 text-white bg-black group-hover:bg-white group-hover:text-black rounded-full border-8 border-[#D9DBE9] group-hover:border-[#E07575]">
           <svg

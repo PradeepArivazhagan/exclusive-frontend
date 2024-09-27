@@ -10,7 +10,7 @@ const CarouselComponent = () => {
   var settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     pauseOnHover: true,
     arrows: false,
@@ -18,7 +18,7 @@ const CarouselComponent = () => {
   return (
     <Slider {...settings}>
       <div>
-        <div className="bg-black flex flex-row items-center justify-center text-white px-6 py-8 md:py-7 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-black flex flex-row items-center justify-center text-white px-6 py-9 md:py-7 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <img src={apple} alt="apple" className="max-md:w-5" />
@@ -58,7 +58,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-gradient-to-r from-green-600 via-green-500 to-green-400 flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-r from-green-600 via-green-500 to-green-400 flex flex-row items-center justify-center text-white px-6 py-8 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold">
@@ -99,7 +99,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-gradient-to-l from-blue-800 via-blue-700 to-blue-600 flex flex-row items-center justify-center text-white px-6 py-7 md:py-9 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-l from-blue-800 via-blue-700 to-blue-600 flex flex-row items-center justify-center text-white px-6 py-8 md:py-9 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold">
@@ -140,7 +140,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 flex flex-row items-center justify-center text-white px-6 py-7 md:py-9 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 flex flex-row items-center justify-center text-white px-6 py-8 md:py-9 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold text-black">
@@ -181,7 +181,7 @@ const CarouselComponent = () => {
       </div>
 
       <div>
-        <div className="bg-gradient-to-r from-pink-600 via-pink-500 to-pink-400 flex flex-row items-center justify-center text-white px-6 py-7 md:py-8 md:px-14 lg:py-14 lg:px-20">
+        <div className="bg-gradient-to-r from-pink-600 via-pink-500 to-pink-400 flex flex-row items-center justify-center text-white px-6 py-8 md:py-8 md:px-14 lg:py-14 lg:px-20">
           <div className="w-1/2">
             <div className="flex flex-row items-center gap-4">
               <h1 className="text-xs md:text-base lg:font-semibold ">

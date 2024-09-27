@@ -1,15 +1,7 @@
 import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
-import wish1 from "../assets/images/wish1.png";
-import wish2 from "../assets/images/wish2.png";
-import wish3 from "../assets/images/wish3.png";
-import wish4 from "../assets/images/wish4.png";
 import justforyou1 from "../assets/images/justforyou1.png";
-import justforyou2 from "../assets/images/justforyou2.png";
-import justforyou3 from "../assets/images/justforyou3.png";
-import justforyou4 from "../assets/images/justforyou4.png";
 import FavouriteProduct from "../components/FavouriteProduct";
-import Product from "../components/Product";
 
 const WishList = () => {
   return (

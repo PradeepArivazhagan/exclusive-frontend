@@ -14,6 +14,7 @@ import Cart from "./Pages/Cart";
 import WishList from "./Pages/WishList";
 import ProductDetails from "./Pages/ProductDetails";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
+import PageNotFound from "./Pages/PageNotFound";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           Component={ProductDetailsPage}
         />
         <Route path="*" Component={NotFound} />
+        <Route path="*" Component={PageNotFound} />
       </Routes>
     </BrowserRouter>
   );

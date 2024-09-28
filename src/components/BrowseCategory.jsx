@@ -54,7 +54,7 @@ const BrowseCategory = () => {
         <div className="flex flex-row items-center gap-2">
           <button
             onClick={previousArrow}
-            className="bg-[#F5F5F5] p-2 rounded-full"
+            className="bg-[#F5F5F5] p-2 rounded-full hover:bg-slate-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const BrowseCategory = () => {
               />
             </svg>
           </button>
-          <button onClick={nextArrow} className="bg-[#F5F5F5] p-2 rounded-full">
+          <button onClick={nextArrow} className="bg-[#F5F5F5] p-2 rounded-full hover:bg-slate-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

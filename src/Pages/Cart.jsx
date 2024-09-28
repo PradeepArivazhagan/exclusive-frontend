@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import cart1 from "../assets/images/cart1.png";
 import cart2 from "../assets/images/cart2.png";
+import MainFooter from "../components/MainFooter";
 
 const Cart = () => {
   return (
@@ -145,7 +145,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <MainFooter />
     </>
   );
 };

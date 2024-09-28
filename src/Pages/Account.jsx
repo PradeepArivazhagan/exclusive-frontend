@@ -1,5 +1,5 @@
 import MainHeader from "../components/MainHeader";
-import Footer from "../components/Footer";
+import MainFooter from "../components/MainFooter";
 const Account = () => {
   return (
     <>
@@ -118,7 +118,7 @@ const Account = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <MainFooter/>
     </>
   );
 };

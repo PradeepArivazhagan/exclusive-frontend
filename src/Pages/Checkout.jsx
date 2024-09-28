@@ -1,5 +1,5 @@
 import MainHeader from "../components/MainHeader";
-import Footer from "../components/Footer";
+import MainFooter from "../components/MainFooter";
 import cart1 from "../assets/images/cart1.png";
 import cart2 from "../assets/images/cart2.png";
 import card1 from "../assets/images/card1.png";
@@ -162,7 +162,10 @@ const Checkout = () => {
                   value="cash"
                   className="h-4 w-4 accent-black"
                 />
-                <label htmlFor="cashondelivery" className="text-sm md:text-base">
+                <label
+                  htmlFor="cashondelivery"
+                  className="text-sm md:text-base"
+                >
                   Cash on Delivery
                 </label>
               </div>
@@ -185,7 +188,7 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <MainFooter />
     </>
   );
 };

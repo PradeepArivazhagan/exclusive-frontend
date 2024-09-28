@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
 import phone from "../assets/icons/phone.svg";
 import mail from "../assets/icons/mail.svg";
 import MainHeader from "../components/MainHeader";
+import MainFooter from "../components/MainFooter";
 const ContactPage = () => {
   return (
     <>
@@ -67,7 +67,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <MainFooter/>
     </>
   );
 };

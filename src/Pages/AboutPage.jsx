@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import MainFooter from "../components/MainFooter"
 import MainHeader from "../components/MainHeader";
 import Features from "../components/Features";
 import Achievement from "../components/Achievement";
@@ -16,7 +16,7 @@ const AboutPage = () => {
           <Features />
         </div>
       </div>
-      <Footer />
+      <MainFooter/>
     </>
   );
 };

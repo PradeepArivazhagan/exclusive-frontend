@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
 import MainHeader from "../components/MainHeader";
 import justforyou1 from "../assets/images/justforyou1.png";
 import FavouriteProduct from "../components/FavouriteProduct";
+import MainFooter from "../components/MainFooter";
 
 const WishList = () => {
   return (
@@ -805,7 +805,7 @@ const WishList = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <MainFooter />
     </>
   );
 };

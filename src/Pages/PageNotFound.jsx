@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import MainFooter from "../components/MainFooter";
 import MainHeader from "../components/MainHeader";
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,7 @@ const PageNotFound = () => {
           </Link>
         </div>
       </div>
-      <Footer />
+      <MainFooter/>
     </div>
   );
 };

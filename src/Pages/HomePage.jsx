@@ -1,5 +1,4 @@
 import MainHeader from "../components/MainHeader";
-import Footer from "../components/Footer";
 import Features from "../components/Features";
 import Banner from "../components/Banner";
 import CategoryAndCarousel from "../components/CategoryAndCarousel";
@@ -8,6 +7,7 @@ import BrowseCategory from "../components/BrowseCategory";
 import BestSellingProduct from "../components/BestSellingProduct";
 import OurProducts from "../components/OurProducts";
 import FeaturedProduct from "../components/FeaturedProduct";
+import MainFooter from "../components/MainFooter";
 const HomePage = () => {
   return (
     <>
@@ -31,7 +31,7 @@ const HomePage = () => {
           <Features />
         </div>
       </div>
-      <Footer />
+      <MainFooter/>
     </>
   );
 };

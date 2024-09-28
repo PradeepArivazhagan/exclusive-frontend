@@ -1,5 +1,4 @@
 import MainHeader from "../components/MainHeader";
-import Footer from "../components/Footer";
 import detailMain from "../assets/images/detailMain.png";
 import detail1 from "../assets/images/detail1.png";
 import detail2 from "../assets/images/detail2.png";
@@ -8,6 +7,7 @@ import detail4 from "../assets/images/detail4.png";
 import deliveryBlack from "../assets/icons/deliveryBlack.svg";
 import returnIcon from "../assets/icons/return.svg";
 import Product from "../components/Product";
+import MainFooter from "../components/MainFooter";
 const ProductDetailsPage = () => {
   return (
     <>
@@ -221,7 +221,7 @@ const ProductDetailsPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <MainFooter/>
     </>
   );
 };

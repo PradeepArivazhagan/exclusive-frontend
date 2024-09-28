@@ -19,26 +19,27 @@ import PageNotFound from "./Pages/PageNotFound";
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route exact path="/login" Component={Login} />
-        <Route exact path="/signup" Component={SignUp} />
+      <Routes>        
         <Route exact path="/" Component={Home} />
-        <Route exact path="/homepage" Component={HomePage} />
-        <Route exact path="/about" Component={About} />
-        <Route exact path="/aboutpage" Component={AboutPage} />
+        <Route exact path="/signup" Component={SignUp} />
+        <Route exact path="/login" Component={Login} />
         <Route exact path="/contact" Component={Contact} />
+        <Route exact path="/about" Component={About} />
+        <Route exact path="/productdetails" Component={ProductDetails} />
+        <Route path="*" Component={NotFound} />
+
+        <Route exact path="/homepage" Component={HomePage} />
         <Route exact path="/contactpage" Component={ContactPage} />
+        <Route exact path="/aboutpage" Component={AboutPage} />
         <Route exact path="/account" Component={Account} />
         <Route exact path="/checkout" Component={Checkout} />
         <Route exact path="/cart" Component={Cart} />
         <Route exact path="/wishlist" Component={WishList} />
-        <Route exact path="/productdetails" Component={ProductDetails} />
         <Route
           exact
           path="/productdetailspage"
           Component={ProductDetailsPage}
         />
-        <Route path="*" Component={NotFound} />
         <Route path="*" Component={PageNotFound} />
       </Routes>
     </BrowserRouter>

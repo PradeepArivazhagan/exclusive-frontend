@@ -34,16 +34,16 @@ const Footer = () => {
         </ul>
         <ul>
           <li className="text-xl font-bold">Account</li>
-          <Link to="/account">
+          <Link to="/login">
             <li className="text-sm mt-4">My Account</li>
           </Link>
           <Link to="/login">
             <li className="text-sm mt-3">Login / Register</li>
           </Link>
-          <Link to="/cart">
+          <Link to="/login">
             <li className="text-sm mt-3">Cart</li>
           </Link>
-          <Link to="/wishlist">
+          <Link to="/login">
             <li className="text-sm mt-3">Wishlist</li>
           </Link>
           <Link to="/">

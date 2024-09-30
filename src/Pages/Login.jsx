@@ -1,8 +1,67 @@
 import AuthHeaders from "../components/AuthHeaders";
 import Footer from "../components/Footer";
 import login from "../assets/images/login.png";
+import { useState } from "react";
+import Axios from "axios";
+import { useNavigate } from "react-router";
+import Cookies from "js-cookie";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isError, setIsError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    if (email === "") {
+      setIsError(true);
+      setErrorMessage("Please enter email");
+      setTimeout(() => {
+        setIsError(false);
+        setErrorMessage("");
+      }, 3000);
+    } else if (password === "") {
+      setIsError(true);
+      setErrorMessage("Please enter password");
+      setTimeout(() => {
+        setIsError(false);
+        setErrorMessage("");
+      }, 3000);
+    }
+    if (email !== "" && password !== "") {
+      setIsError(false);
+      setErrorMessage("");
+      await Axios.post("http://localhost:4000/login", {
+        email: email,
+        password: password,
+      })
+        .then((response) => {
+          const jwtToken = response.data.jwtToken;
+          Cookies.set("jwt_token", jwtToken, { expires: 30 });
+          if (response.statusText === "OK") {
+            navigate("/homepage");
+          } else {
+            setIsError(true);
+            setErrorMessage(response.data.message);
+            setTimeout(() => {
+              setIsError(false);
+              setErrorMessage("");
+            }, 3000);
+          }
+        })
+        .catch((err) => {
+          setIsError(true);
+          setErrorMessage(err.response.statusText);
+          setTimeout(() => {
+            setIsError(false);
+            setErrorMessage("");
+          }, 3000);
+        });
+    }
+  };
+
   return (
     <>
       <AuthHeaders />
@@ -21,19 +80,29 @@ const Login = () => {
                 </h1>
                 <p className="mt-2 text-xs">Enter your details below</p>
               </div>
-              <form className="w-full mt-8 md:mt-10 flex flex-col">
+              <form
+                onSubmit={handleLogin}
+                className="w-full mt-8 md:mt-10 flex flex-col"
+              >
                 <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                   type="text"
                   placeholder="Email or Phone Number"
                   className="bg-transparent focus:outline-none text-sm pb-1 border-b-2 border-slate-300"
                 />
                 <input
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
                   type="password"
                   placeholder="Password"
                   className="mt-5 md:mt-8 bg-transparent focus:outline-none text-sm pb-1 border-b-2 border-slate-300"
                 />
                 <div className="mt-8 md:mt-10 flex flex-row items-center justify-between">
-                  <button className="py-2 px-6 lg:py-3 lg:px-8 rounded-sm bg-[#DB4444] hover:bg-[#E07575] text-sm self-start text-white">
+                  <button
+                    type="submit"
+                    className="py-2 px-6 lg:py-3 lg:px-8 rounded-sm bg-[#DB4444] hover:bg-[#E07575] text-sm self-start text-white"
+                  >
                     Log In
                   </button>
                   <p className="text-[#DB4444] text-xs lg:text-sm">
@@ -41,6 +110,9 @@ const Login = () => {
                   </p>
                 </div>
               </form>
+              {isError && (
+                <p className="text-xs mt-2 text-red-600">{errorMessage}</p>
+              )}
             </div>
           </div>
         </div>

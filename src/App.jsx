@@ -15,32 +15,34 @@ import WishList from "./Pages/WishList";
 import ProductDetails from "./Pages/ProductDetails";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
 import PageNotFound from "./Pages/PageNotFound";
+import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
+import NonProtectedRoute from "./ProtectedRoute/NonProtectedRoute";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>        
-        <Route exact path="/" Component={Home} />
-        <Route exact path="/signup" Component={SignUp} />
-        <Route exact path="/login" Component={Login} />
-        <Route exact path="/contact" Component={Contact} />
-        <Route exact path="/about" Component={About} />
-        <Route exact path="/productdetails" Component={ProductDetails} />
-        <Route path="*" Component={NotFound} />
+      <Routes>
+        <Route element={<NonProtectedRoute />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/productdetails" element={<ProductDetails />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
 
-        <Route exact path="/homepage" Component={HomePage} />
-        <Route exact path="/contactpage" Component={ContactPage} />
-        <Route exact path="/aboutpage" Component={AboutPage} />
-        <Route exact path="/account" Component={Account} />
-        <Route exact path="/checkout" Component={Checkout} />
-        <Route exact path="/cart" Component={Cart} />
-        <Route exact path="/wishlist" Component={WishList} />
-        <Route
-          exact
-          path="/productdetailspage"
-          Component={ProductDetailsPage}
-        />
-        <Route path="*" Component={PageNotFound} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/homepage" element={<HomePage />} />
+          <Route path="/contactpage" element={<ContactPage />} />
+          <Route path="/aboutpage" element={<AboutPage />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/wishlist" element={<WishList />} />
+          <Route path="/productdetailspage" element={<ProductDetailsPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

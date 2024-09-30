@@ -1,6 +1,7 @@
 import search from "../assets/icons/search.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Cookies from "js-cookie";
 
 const MainHeader = () => {
   const [isMenuMobile, setIsMenuMobile] = useState(false);
@@ -23,6 +24,11 @@ const MainHeader = () => {
 
   const onClickAccount = () => {
     setIsClickAccount((prevState) => !prevState);
+  };
+
+  const handleLogout = () => {
+    Cookies.remove("jwt_token");
+    window.location.href = "/";
   };
 
   return (
@@ -91,7 +97,10 @@ const MainHeader = () => {
             </button>
           </div>
           <div className="hidden lg:flex flex-row items-center gap-1">
-            <Link to="/wishlist" className="relative p-2 hover:bg-slate-100 hover:rounded-full">
+            <Link
+              to="/wishlist"
+              className="relative p-2 hover:bg-slate-100 hover:rounded-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -110,7 +119,10 @@ const MainHeader = () => {
                 4
               </div>
             </Link>
-            <Link to="/cart" className="relative p-2 hover:bg-slate-100 hover:rounded-full">
+            <Link
+              to="/cart"
+              className="relative p-2 hover:bg-slate-100 hover:rounded-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -129,7 +141,10 @@ const MainHeader = () => {
                 2
               </div>
             </Link>
-            <button onClick={onClickAccount} className="p-2 hover:bg-slate-100 hover:rounded-full">
+            <button
+              onClick={onClickAccount}
+              className="p-2 hover:bg-slate-100 hover:rounded-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -503,7 +518,7 @@ const MainHeader = () => {
         </ul>
       )}
       {isClickAccount && (
-        <ul className="bg-white py-2 top-36  right-40 mt-2 absolute shadow-xl flex flex-col md:hidden lg:hidden items-start text-base rounded-md">
+        <ul className="bg-white py-2 top-36  right-44 mt-2 absolute shadow-xl flex flex-col md:hidden lg:hidden items-start text-base rounded-md">
           <Link
             to="/account"
             className="w-full py-2 px-6 hover:bg-slate-100 rounded-sm flex flex-row items-center justify-center gap-3"
@@ -604,8 +619,8 @@ const MainHeader = () => {
               <h1 className="text-sm">My Reviews</h1>
             </div>
           </Link>
-          <Link
-            to="/account"
+          <button
+            onClick={handleLogout}
             className="w-full py-3 px-6 hover:bg-slate-100 rounded-sm flex flex-row items-center justify-center gap-3"
           >
             <div className="">
@@ -625,10 +640,10 @@ const MainHeader = () => {
                 />
               </svg>
             </div>
-            <div className="w-3/4">
+            <div className="w-3/4 text-left">
               <h1 className="text-sm">Logout</h1>
             </div>
-          </Link>
+          </button>
         </ul>
       )}
       {isClickAccount && (
@@ -733,8 +748,8 @@ const MainHeader = () => {
               <h1>My Reviews</h1>
             </div>
           </Link>
-          <Link
-            to="/account"
+          <button
+            onClick={handleLogout}
             className="w-full py-3 px-8 hover:bg-slate-100 rounded-sm flex flex-row items-center justify-center gap-3"
           >
             <div className="">
@@ -754,10 +769,10 @@ const MainHeader = () => {
                 />
               </svg>
             </div>
-            <div className="w-3/4">
+            <div className="w-3/4 text-left">
               <h1>Logout</h1>
             </div>
-          </Link>
+          </button>
         </ul>
       )}
       {isClickAccount && (
@@ -862,11 +877,11 @@ const MainHeader = () => {
               <h1>My Reviews</h1>
             </div>
           </Link>
-          <Link
-            to="/account"
-            className="w-full py-3 px-10 hover:bg-slate-100 rounded-sm flex flex-row items-center justify-center gap-3"
+          <button
+            onClick={handleLogout}
+            className="w-full py-3 px-10 hover:bg-slate-100 rounded-sm flex flex-row items-center justify-center "
           >
-            <div className="">
+            <div className="w-1/4">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -883,10 +898,10 @@ const MainHeader = () => {
                 />
               </svg>
             </div>
-            <div className="w-3/4">
+            <div className="w-3/4 text-left">
               <h1>Logout</h1>
             </div>
-          </Link>
+          </button>
         </ul>
       )}
     </header>

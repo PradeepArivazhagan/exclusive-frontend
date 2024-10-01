@@ -1,20 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
-import HomePage from "./Pages/HomePage";
-import NotFound from "./Pages/NotFound";
 import Contact from "./Pages/Contact";
-import ContactPage from "./Pages/ContactPage";
 import About from "./Pages/About";
+import ProductDetails from "./Pages/ProductDetails";
+import NotFound from "./Pages/NotFound";
+
+import HomePage from "./Pages/HomePage";
+import ContactPage from "./Pages/ContactPage";
 import AboutPage from "./Pages/AboutPage";
 import Account from "./Pages/Account";
 import Checkout from "./Pages/Checkout";
 import Cart from "./Pages/Cart";
 import WishList from "./Pages/WishList";
-import ProductDetails from "./Pages/ProductDetails";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
 import PageNotFound from "./Pages/PageNotFound";
+
 import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
 import NonProtectedRoute from "./ProtectedRoute/NonProtectedRoute";
 

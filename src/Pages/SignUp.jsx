@@ -1,11 +1,15 @@
 import AuthHeaders from "../components/AuthHeaders";
 import Footer from "../components/Footer";
+
 import login from "../assets/images/login.png";
 import google from "../assets/icons/google.svg";
+
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import Axios from "axios";
+import { TailSpin } from "react-loader-spinner";
 
 const SignUp = () => {
   const navigate = useNavigate(true);
@@ -14,6 +18,7 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -24,16 +29,14 @@ const SignUp = () => {
         setIsError(false);
         setErrorMessage("");
       }, 3000);
-    }
-    else if (email === "") {
+    } else if (email === "") {
       setIsError(true);
       setErrorMessage("Please enter email");
       setTimeout(() => {
         setIsError(false);
         setErrorMessage("");
       }, 3000);
-    }
-    else if (password === "") {
+    } else if (password === "") {
       setIsError(true);
       setErrorMessage("Please enter password");
       setTimeout(() => {
@@ -44,12 +47,14 @@ const SignUp = () => {
     if (name !== "" && email !== "" && password !== "") {
       setIsError(false);
       setErrorMessage("");
+      setIsLoading(true);
       await Axios.post("http://localhost:4000/signup", {
         name: name,
         email: email,
         password: password,
       })
         .then((response) => {
+          setIsLoading(false);
           if (response.statusText === "OK") {
             navigate("/login");
           } else {
@@ -104,8 +109,8 @@ const SignUp = () => {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  type="text"
-                  placeholder="Email or Phone Number"
+                  type="email"
+                  placeholder="Email"
                   className="mt-5 md:mt-8 bg-transparent focus:outline-none text-sm pb-1 border-b-2 border-slate-300"
                 />
                 <input
@@ -117,9 +122,22 @@ const SignUp = () => {
                 />
                 <button
                   type="submit"
-                  className="mt-8 md:mt-10 py-2 px-6 lg:py-3 lg:px-8 rounded-sm bg-[#DB4444] hover:bg-[#E07575] text-sm text-white"
+                  className="mt-8 md:mt-10 py-2 px-6 lg:py-3 lg:px-8 rounded-sm bg-[#DB4444] hover:bg-[#E07575] text-sm text-white flex flex-row items-center justify-center"
                 >
-                  Create Account
+                  {isLoading ? (
+                    <TailSpin
+                      visible={true}
+                      height="20"
+                      width="20"
+                      color="white"
+                      ariaLabel="tail-spin-loading"
+                      radius="1"
+                      wrapperStyle={{}}
+                      wrapperClass=""
+                    />
+                  ) : (
+                    <h1>Create Account</h1>
+                  )}
                 </button>
                 <button className="mt-2 py-2 px-6 lg:py-3 lg:px-8 text-black hover:text-[#7D8184] text-sm border border-black hover:border-[#7D8184] rounded-sm flex flex-row items-center justify-center gap-2">
                   <img src={google} alt="google" />

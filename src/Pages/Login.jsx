@@ -1,10 +1,13 @@
 import AuthHeaders from "../components/AuthHeaders";
 import Footer from "../components/Footer";
+
 import login from "../assets/images/login.png";
+
 import { useState } from "react";
 import Axios from "axios";
 import { useNavigate } from "react-router";
 import Cookies from "js-cookie";
+import { TailSpin } from "react-loader-spinner";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -12,6 +15,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -33,11 +37,13 @@ const Login = () => {
     if (email !== "" && password !== "") {
       setIsError(false);
       setErrorMessage("");
+      setIsLoading(true);
       await Axios.post("http://localhost:4000/login", {
         email: email,
         password: password,
       })
         .then((response) => {
+          setIsLoading(false);
           const jwtToken = response.data.jwtToken;
           Cookies.set("jwt_token", jwtToken, { expires: 30 });
           if (response.statusText === "OK") {
@@ -87,8 +93,8 @@ const Login = () => {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  type="text"
-                  placeholder="Email or Phone Number"
+                  type="email"
+                  placeholder="Email"
                   className="bg-transparent focus:outline-none text-sm pb-1 border-b-2 border-slate-300"
                 />
                 <input
@@ -103,7 +109,19 @@ const Login = () => {
                     type="submit"
                     className="py-2 px-6 lg:py-3 lg:px-8 rounded-sm bg-[#DB4444] hover:bg-[#E07575] text-sm self-start text-white"
                   >
-                    Log In
+                    {isLoading ? (
+                      <TailSpin
+                        visible={true}
+                        height="20"
+                        width="20"
+                        color="white"
+                        ariaLabel="tail-spin-loading"
+                        radius="1"
+                        wrapperClass="px-3"
+                      />
+                    ) : (
+                      <h1>Log In</h1>
+                    )}
                   </button>
                   <p className="text-[#DB4444] text-xs lg:text-sm">
                     Forget Password?
